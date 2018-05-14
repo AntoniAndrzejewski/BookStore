@@ -37,6 +37,7 @@ namespace BookStore.Models.Repository
                 if (dbBook != null)
                 {
                     dbBook.Name = book.Name;
+                    dbBook.Author = book.Author;
                     dbBook.Description = book.Description;
                     dbBook.Price = book.Price;
                     dbBook.Category = book.Category;

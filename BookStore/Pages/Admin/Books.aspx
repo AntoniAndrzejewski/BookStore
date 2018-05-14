@@ -11,6 +11,7 @@
                 <table id="productsTable">
                     <tr>
                         <th>Nazwa</th>
+                        <th>Autor</th>
                         <th>Opis</th>
                         <th>Kategorja</th>
                         <th>Cena</th>
@@ -20,8 +21,9 @@
             </div>
         </LayoutTemplate>
         <ItemTemplate>
-            <tr>
+            <tr class="w3-hover-green">
                 <td><%# Item.Name %></td>
+                <td><%# Item.Author %></td>
                 <td class="description"><span><%# Item.Description %></span></td>
                 <td><%# Item.Category %></td>
                 <td><%# Item.Price.ToString("c") %></td>
@@ -37,6 +39,8 @@
                     <input name="name" value="<%# Item.Name %>" />
                     <input type="hidden" name="ProductID" value="<%# Item.BookId %>" />
                 </td>
+                <td>
+                    <input name="Author" value="<%# Item.Author %>" /></td>
                 <td>
                     <input name="description" value="<%# Item.Description %>" /></td>
                 <td>
@@ -55,6 +59,8 @@
                     <input name="name" />
                     <input type="hidden" name="ProductID" value="0" />
                 </td>
+                <td>
+                    <input name="Author" /></td>
                 <td>
                     <input name="description" /></td>
                 <td>
