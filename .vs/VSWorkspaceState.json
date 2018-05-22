@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "\\BookStore\\bin",
+    "\\BookStore\\bin\\roslyn",
+    "\\BookStore\\Content",
+    "\\BookStore\\Models",
+    "\\BookStore\\obj",
+    "\\BookStore\\obj\\Release",
+    "\\BookStore\\Pages",
+    "\\BookStore\\Properties",
+    "\\BookStore\\Scripts",
+    "\\packages"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -8,7 +8,7 @@
         runat="server">
         <LayoutTemplate>
             <div class="outerContainer">
-                <table id="productsTable">
+                <table id="productsTable" class="w3-table-all">
                     <tr>
                         <th>Nazwa</th>
                         <th>Autor</th>

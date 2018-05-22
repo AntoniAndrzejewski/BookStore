@@ -41,6 +41,8 @@ namespace BookStore.Models.Repository
                     dbBook.Description = book.Description;
                     dbBook.Price = book.Price;
                     dbBook.Category = book.Category;
+                    dbBook.ImageData = book.ImageData;
+                    dbBook.ImageMimeType = book.ImageMimeType;
                 }
             }
             context.SaveChanges();

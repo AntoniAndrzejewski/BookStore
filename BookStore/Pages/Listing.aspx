@@ -8,6 +8,10 @@
             SelectMethod="GetBooks" runat="server">
             <ItemTemplate>
                 <div class="item">
+                      <div class="pull-left" style="margin-right: 10px">
+                         <img class="img-thumbnail" width="75" height="75"
+                         src="@Url.Action("GetImage", "Book", />
+                      </div>
                     <h3><%# Item.Name %></h3>
                     <h4><%# Item.Author %></h4>
                     <%# Item.Description %>

@@ -54,5 +54,6 @@ namespace BookStore.Pages.Admin
                 repository.SaveBook(myBook);
             }
         }
+
     }
 }

@@ -92,6 +92,7 @@
     <Content Include="Content\Styles.css" />
     <Content Include="Controls\CartSummary.ascx" />
     <Content Include="Controls\CategoryList.ascx" />
+    <Content Include="Img\book.png" />
     <Content Include="Pages\Admin\Books.aspx" />
     <Content Include="Pages\Admin\Orders.aspx" />
     <Content Include="Pages\CartView.aspx" />
