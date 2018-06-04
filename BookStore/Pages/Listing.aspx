@@ -8,15 +8,13 @@
             SelectMethod="GetBooks" runat="server">
             <ItemTemplate>
                 <div class="item">
-                      <div class="pull-left" style="margin-right: 10px">
-                         <img class="img-thumbnail" width="75" height="75"
-                         src="@Url.Action("GetImage", "Book", />
-                      </div>
+                      
+                    <img style="float:left;width:170px;height:170px;margin-right:15px;" src="@Url.Action("GetImage", "Book", />
                     <h3><%# Item.Name %></h3>
                     <h4><%# Item.Author %></h4>
                     <%# Item.Description %>
                     <h4><%# Item.Price.ToString("c") %></h4>
-                    <button name="add" type="submit" value="<%# Item.BookId %>">
+                    <button name="add" type="submit" value="<%# Item.BookId %>" >
                         Dodaj do Koszyka
                     </button>
                 </div>
@@ -38,5 +36,10 @@
             }
         %>
     </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16">
+        <h3>BookStore</h3>
+        <p>ASP.Net WEB Forms & CSS W3</p>
+    </footer>
 </asp:Content>
 
