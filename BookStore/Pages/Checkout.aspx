@@ -7,7 +7,6 @@
 
         <div id="checkoutForm" class="checkout" runat="server">
             <h2>Złóż zamówienie</h2>
-            Wprowadź dane!
 
         <div id="errors" data-valmsg-summary="true">
             <ul>
@@ -16,23 +15,24 @@
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
         </div>
 
-            <h3>Заказчик</h3>
+ 
             <div>
                 <label for="name">Imię:</label>
                 <SX:VInput Property="Name" runat="server" />
             </div>
 
-            <h3>Adres</h3>
+      
             <div>
-                <label for="line1">Adres 1:</label>
+                <label for="line1">Nazwisko:</label>
                 <SX:VInput Property="Line1" runat="server" />
             </div>
+                  <h3>Adres</h3>
             <div>
-                <label for="line2">Adres 2:</label>
+                <label for="line2">Ulica, nr domu:</label>
                 <SX:VInput Property="Line2" runat="server" />
             </div>
             <div>
-                <label for="line3">Adres 3:</label>
+                <label for="line3">Kod:</label>
                 <SX:VInput Property="Line3" runat="server" />
             </div>
             <div>
@@ -40,7 +40,7 @@
                 <SX:VInput Property="City" runat="server" />
             </div>
 
-            <h3>Szczegóły zamówienia</h3>
+       </br>
             <input type="checkbox" id="giftwrap" name="giftwrap" value="true" />
             Zapakować jako prezent?
         

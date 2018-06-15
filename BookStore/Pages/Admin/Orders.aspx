@@ -7,6 +7,9 @@
         <table id="ordersTable">
             <tr>
                 <th>Imię </th>
+                <th>Nazwisko </th>
+                <th>Ulica, nr domu </th>
+                <th>Kod </th>
                 <th>Miasto</th>
                 <th>Zamowienij</th>
                 <th>Suma</th>
@@ -17,6 +20,9 @@
                 <ItemTemplate>
                     <tr>
                         <td><%#: Item.Name %></td>
+                        <td><%#: Item.Line1 %></td>
+                        <td><%#: Item.Line2 %></td>
+                        <td><%#: Item.Line3 %></td>
                         <td><%#: Item.City %></td>
                         <td><%# Item.OrderLines.Sum(ol => ol.Quantity) %></td>
                         <td><%# Total(Item.OrderLines).ToString("C") %> </td>
